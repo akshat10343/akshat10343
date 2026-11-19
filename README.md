@@ -9,7 +9,7 @@ I study computer science at the University of Washington. This summer I was an A
 TinyLlama-1.1B served from raw PyTorch: a hand-written Llama forward pass, a slot-based KV cache, continuous batching, INT8 quantization, and a FastAPI server. No vLLM, no llama.cpp.
 
 - **0.0** max logit error against the Hugging Face reference
-- **11.3×** faster decode with the KV cache, within 3.1% of HF `generate()`
+- **11.3×** faster decode with the KV cache, within 3.1% of the Hugging Face decode rate
 - **4.63×** the batch-1 throughput with continuous batching on a 17-request workload
 - **46.9%** smaller model tensors with INT8 weights, at 100% top-1 agreement
 
